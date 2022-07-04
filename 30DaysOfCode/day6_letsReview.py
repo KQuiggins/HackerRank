@@ -17,7 +17,7 @@ for i in range(len(temp)):
             odd.append(temp[i][j])
     
         
-    print(even[i])
+    print("".join(even) + " " + "".join(odd))
 
 
 
