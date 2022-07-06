@@ -3,13 +3,13 @@
 Note: Your phone book should be a Dictionary/Map/HashMap data structure.  """
 
 n = int(input())
-temp = []
+
 phoneBook = {}
 
-for i in range(n):
-    entries = input().split()
-    temp.append(entries)
-    phoneBook = {k:v for (k,v) in temp}
+
+entries = [input().split() for _ in range(n)]
+    
+phoneBook = {k:v for (k,v) in entries}
 
 while True:
     try:
@@ -22,5 +22,5 @@ while True:
         break
 
 
-print(temp)
+print(entries)
 print(phoneBook)
